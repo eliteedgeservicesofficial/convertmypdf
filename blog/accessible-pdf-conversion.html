@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Accessible PDFs: Standards and Best Practices - ConvertMyPDF.org</title>
+    <meta name="description" content="Learn how to create and convert PDFs that meet accessibility standards. Ensure your documents are usable by everyone, including people with disabilities.">
+    <meta name="keywords" content="accessible PDF, PDF accessibility, WCAG compliance, PDF/UA, Section 508, disability access, inclusive documents">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org markup for articles -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Creating Accessible PDFs: Standards and Best Practices",
+        "description": "Learn how to create and convert PDFs that meet accessibility standards",
+        "author": {
+            "@type": "Organization",
+            "name": "ConvertMyPDF.org"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "ConvertMyPDF.org"
+        },
+        "datePublished": "2024-01-10",
+        "dateModified": "2024-01-10"
+    }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-file-pdf mr-2"></i>
+                        ConvertMyPDF.org
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="../blog.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Blog</a>
+                        <a href="#about" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+            <ol class="flex items-center space-x-2 text-sm text-gray-500">
+                <li><a href="../index.html" class="hover:text-blue-600">Home</a></li>
+                <li><i class="fas fa-chevron-right"></i></li>
+                <li><a href="../blog.html" class="hover:text-blue-600">Blog</a></li>
+                <li><i class="fas fa-chevron-right"></i></li>
+                <li class="text-gray-900">Accessible PDF Conversion</li>
+            </ol>
+        </nav>
+
+        <!-- Article Header -->
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="p-8">
+                <div class="mb-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-2 rounded-lg">
+                            <i class="fas fa-universal-access text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm text-gray-500">Published on January 10, 2024</p>
+                            <p class="text-sm text-gray-500">6 minute read</p>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        Creating Accessible PDFs: Standards and Best Practices
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Learn how to create and convert PDFs that meet accessibility standards. Ensure your documents are usable by everyone, including people with disabilities.
+                    </p>
+                </div>
+
+                <!-- Table of Contents -->
+                <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">Table of Contents</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#understanding-accessibility" class="text-blue-600 hover:text-blue-700">Understanding PDF Accessibility</a></li>
+                        <li><a href="#accessibility-standards" class="text-blue-600 hover:text-blue-700">Key Accessibility Standards and Guidelines</a></li>
+                        <li><a href="#creating-accessible-pdfs" class="text-blue-600 hover:text-blue-700">Creating Accessible PDFs from Source Documents</a></li>
+                        <li><a href="#conversion-best-practices" class="text-blue-600 hover:text-blue-700">Accessibility-Focused Conversion Practices</a></li>
+                        <li><a href="#testing-validation" class="text-blue-600 hover:text-blue-700">Testing and Validation Tools</a></li>
+                    </ul>
+                </div>
+
+                <!-- Article Content -->
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-lg text-gray-700 mb-6">
+                        Digital accessibility is not just a legal requirement—it's a fundamental principle of inclusive design that ensures everyone can access and use digital content effectively. PDF documents, being one of the most widely used formats for sharing information, must be created and converted with accessibility in mind. This comprehensive guide will help you understand accessibility standards and implement best practices for creating PDFs that work for all users.
+                    </p>
+
+                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6">
+                        <h3 class="font-semibold text-purple-800 mb-2">Why PDF Accessibility Matters:</h3>
+                        <p class="text-purple-700">
+                            Over 1 billion people worldwide live with disabilities, and many rely on assistive technologies like screen readers to access digital content. Accessible PDFs ensure that your documents can be read, navigated, and understood by everyone, regardless of their abilities.
+                        </p>
+                    </div>
+
+                    <h2 id="understanding-accessibility" class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Understanding PDF Accessibility
+                    </h2>
+
+                    <p class="text-gray-700 mb-4">
+                        PDF accessibility refers to the design and structure of PDF documents that allows them to be used effectively by people with disabilities. This includes individuals who are blind or have low vision, are deaf or hard of hearing, have motor disabilities, or have cognitive disabilities.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Common Accessibility Barriers in PDFs
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Many PDFs contain barriers that prevent assistive technologies from properly interpreting and presenting content:
+                    </p>
+
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li>Lack of proper document structure and headings</li>
+                        <li>Missing alternative text for images and graphics</li>
+                        <li>Inaccessible forms without proper labels</li>
+                        <li>Poor color contrast and reliance on color alone</li>
+                        <li>Untagged content that screen readers cannot interpret</li>
+                        <li>Complex tables without proper headers and structure</li>
+                        <li>Scanned documents without text recognition (OCR)</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Benefits of Accessible PDFs
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Creating accessible PDFs benefits not only users with disabilities but improves the experience for all users:
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-4 mb-6">
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-blue-800 mb-2">For Users with Disabilities</h4>
+                            <ul class="text-blue-700 text-sm space-y-1">
+                                <li>Screen reader compatibility</li>
+                                <li>Keyboard navigation support</li>
+                                <li>Magnification compatibility</li>
+                                <li>Voice control accessibility</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                            <h4 class="font-semibold text-green-800 mb-2">For All Users</h4>
+                            <ul class="text-green-700 text-sm space-y-1">
+                                <li>Better search functionality</li>
+                                <li>Improved mobile experience</li>
+                                <li>Enhanced SEO for web PDFs</li>
+                                <li>Easier content reuse</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 id="accessibility-standards" class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Key Accessibility Standards and Guidelines
+                    </h2>
+
+                    <p class="text-gray-700 mb-4">
+                        Several international standards and guidelines govern PDF accessibility. Understanding these standards is crucial for creating compliant documents.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        PDF/UA (Universal Accessibility) Standard
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        PDF/UA is the international standard (ISO 14289) specifically designed for accessible PDF documents <a href="#ref1" class="text-blue-600 hover:text-blue-700">[1]</a>. It defines technical requirements for PDF accessibility and ensures compatibility with assistive technologies.
+                    </p>
+
+                    <div class="overflow-x-auto mb-6">
+                        <table class="min-w-full bg-white border border-gray-300">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Standard</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Scope</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b">Key Requirements</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">PDF/UA</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">PDF-specific accessibility</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">Tagged structure, alternative text, logical reading order</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">WCAG 2.1</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">Web content accessibility</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">Perceivable, operable, understandable, robust</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Section 508</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">US federal accessibility</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">Electronic accessibility for government</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">EN 301 549</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">European accessibility</td>
+                                    <td class="px-6 py-4 text-sm text-gray-700">ICT accessibility requirements</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        WCAG 2.1 Guidelines for PDFs
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        The Web Content Accessibility Guidelines (WCAG) 2.1 provide a framework for accessibility that applies to PDF documents. The guidelines are organized around four principles:
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-4 mb-6">
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-blue-800 mb-2">1. Perceivable</h4>
+                                <p class="text-blue-700 text-sm">Information must be presentable in ways users can perceive</p>
+                                <ul class="text-blue-600 text-xs mt-2 space-y-1">
+                                    <li>• Alternative text for images</li>
+                                    <li>• Sufficient color contrast</li>
+                                    <li>• Resizable text</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-green-800 mb-2">2. Operable</h4>
+                                <p class="text-green-700 text-sm">Interface components must be operable</p>
+                                <ul class="text-green-600 text-xs mt-2 space-y-1">
+                                    <li>• Keyboard accessibility</li>
+                                    <li>• No seizure-inducing content</li>
+                                    <li>• Navigable structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-yellow-800 mb-2">3. Understandable</h4>
+                                <p class="text-yellow-700 text-sm">Information and UI operation must be understandable</p>
+                                <ul class="text-yellow-600 text-xs mt-2 space-y-1">
+                                    <li>• Readable text</li>
+                                    <li>• Predictable functionality</li>
+                                    <li>• Input assistance</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-purple-800 mb-2">4. Robust</h4>
+                                <p class="text-purple-700 text-sm">Content must be robust enough for assistive technologies</p>
+                                <ul class="text-purple-600 text-xs mt-2 space-y-1">
+                                    <li>• Valid markup</li>
+                                    <li>• Compatible with assistive tech</li>
+                                    <li>• Future-proof structure</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 id="creating-accessible-pdfs" class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Creating Accessible PDFs from Source Documents
+                    </h2>
+
+                    <p class="text-gray-700 mb-4">
+                        The most effective approach to creating accessible PDFs is to start with properly structured source documents. This ensures that accessibility features are preserved during the conversion process.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Microsoft Word to Accessible PDF
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Microsoft Word provides excellent tools for creating accessible documents that convert well to PDF format <a href="#ref2" class="text-blue-600 hover:text-blue-700">[2]</a>:
+                    </p>
+
+                    <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-6">
+                        <li><strong>Use proper heading structure:</strong> Apply Heading 1, Heading 2, etc., styles for document hierarchy</li>
+                        <li><strong>Add alternative text to images:</strong> Right-click images and select "Edit Alt Text"</li>
+                        <li><strong>Create accessible tables:</strong> Use table headers and provide table summaries</li>
+                        <li><strong>Use meaningful link text:</strong> Avoid "click here" or "read more" links</li>
+                        <li><strong>Ensure sufficient color contrast:</strong> Use the Accessibility Checker to verify contrast ratios</li>
+                        <li><strong>Add document properties:</strong> Include title, author, and subject metadata</li>
+                    </ol>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                        <h4 class="font-semibold text-blue-800 mb-2">Word Accessibility Checker:</h4>
+                        <p class="text-blue-700">
+                            Use Word's built-in Accessibility Checker (Review → Check Accessibility) to identify and fix accessibility issues before converting to PDF. This tool provides specific recommendations for improving document accessibility.
+                        </p>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Adobe Acrobat Accessibility Features
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Adobe Acrobat provides comprehensive tools for creating and remediating accessible PDFs:
+                    </p>
+
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li><strong>Accessibility Checker:</strong> Automated tool to identify accessibility issues</li>
+                        <li><strong>Tags panel:</strong> Manual control over document structure and reading order</li>
+                        <li><strong>Alternative text editor:</strong> Add or edit alt text for images and graphics</li>
+                        <li><strong>Form field properties:</strong> Create accessible form fields with proper labels</li>
+                        <li><strong>Reading order tool:</strong> Adjust the logical reading sequence</li>
+                    </ul>
+
+                    <h2 id="conversion-best-practices" class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Accessibility-Focused Conversion Practices
+                    </h2>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Preserving Accessibility During Conversion
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        When converting documents to PDF, specific settings and practices help preserve accessibility features:
+                    </p>
+
+                    <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
+                        <h4 class="font-semibold text-green-800 mb-2">Conversion Settings Checklist:</h4>
+                        <ul class="list-disc list-inside text-green-700 space-y-1">
+                            <li>Enable "Create tagged PDF" option</li>
+                            <li>Include document structure tags</li>
+                            <li>Preserve alternative text for images</li>
+                            <li>Maintain logical reading order</li>
+                            <li>Include bookmarks for navigation</li>
+                            <li>Set appropriate document properties</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Post-Conversion Remediation
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Even with proper source documents and conversion settings, some manual remediation may be necessary:
+                    </p>
+
+                    <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-6">
+                        <li><strong>Run accessibility checker:</strong> Identify remaining issues</li>
+                        <li><strong>Verify reading order:</strong> Ensure logical flow of content</li>
+                        <li><strong>Check alternative text:</strong> Add missing or improve existing alt text</li>
+                        <li><strong>Test with screen readers:</strong> Verify actual user experience</li>
+                        <li><strong>Validate form accessibility:</strong> Ensure form fields are properly labeled</li>
+                        <li><strong>Review color contrast:</strong> Verify sufficient contrast ratios</li>
+                    </ol>
+
+                    <h2 id="testing-validation" class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Testing and Validation Tools
+                    </h2>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Automated Testing Tools
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Several tools can help validate PDF accessibility automatically:
+                    </p>
+
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li><strong>Adobe Acrobat Accessibility Checker:</strong> Comprehensive built-in validation</li>
+                        <li><strong>PAC (PDF Accessibility Checker):</strong> Free tool for PDF/UA validation</li>
+                        <li><strong>CommonLook PDF:</strong> Professional accessibility validation and remediation</li>
+                        <li><strong>axesPDF:</strong> Automated accessibility testing for PDFs</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        Manual Testing Methods
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        Automated tools cannot catch all accessibility issues. Manual testing is essential for comprehensive validation:
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                        <h4 class="font-semibold text-yellow-800 mb-2">Manual Testing Checklist:</h4>
+                        <ul class="list-disc list-inside text-yellow-700 space-y-1">
+                            <li>Navigate using only keyboard (Tab, Arrow keys)</li>
+                            <li>Test with screen reader software (NVDA, JAWS, VoiceOver)</li>
+                            <li>Verify content reflows properly when zoomed to 200%</li>
+                            <li>Check that all interactive elements are accessible</li>
+                            <li>Ensure color is not the only way to convey information</li>
+                            <li>Test form completion using assistive technology</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3">
+                        User Testing with People with Disabilities
+                    </h3>
+
+                    <p class="text-gray-700 mb-4">
+                        The most valuable feedback comes from actual users with disabilities. Consider involving users with disabilities in your testing process to identify real-world usability issues that automated tools might miss.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                        Conclusion
+                    </h2>
+
+                    <p class="text-gray-700 mb-6">
+                        Creating accessible PDFs is an essential skill in today's inclusive digital environment. By understanding accessibility standards, implementing best practices from the source document stage, and conducting thorough testing, you can ensure that your PDF documents are usable by everyone.
+                    </p>
+
+                    <p class="text-gray-700 mb-6">
+                        Remember that accessibility is not a one-time consideration but an ongoing commitment to inclusive design. As technology evolves and standards are updated, continue to stay informed about best practices and emerging tools that can help you create more accessible content.
+                    </p>
+
+                    <div class="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6">
+                        <p class="text-purple-700">
+                            <strong>Final Tip:</strong> Start with accessibility in mind from the beginning of your document creation process. It's much easier to maintain accessibility throughout the workflow than to retrofit it after the fact.
+                        </p>
+                    </div>
+
+                    <!-- References -->
+                    <div class="border-t pt-6 mt-8">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">References</h3>
+                        <ol class="list-decimal list-inside text-sm text-gray-600 space-y-2">
+                            <li id="ref1">Adobe Help Center. (2025). "Create and verify PDF accessibility, Acrobat Pro." <a href="https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html" class="text-blue-600 hover:text-blue-700">https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html</a></li>
+                            <li id="ref2">Section508.gov. "Create Accessible PDFs." <a href="https://www.section508.gov/create/pdfs/" class="text-blue-600 hover:text-blue-700">https://www.section508.gov/create/pdfs/</a></li>
+                            <li id="ref3">Harvard Digital Accessibility. "Creating Accessible PDFs." <a href="https://accessibility.huit.harvard.edu/pdf" class="text-blue-600 hover:text-blue-700">https://accessibility.huit.harvard.edu/pdf</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Related Articles -->
+        <div class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                        <a href="pdf-to-word-conversion-guide.html" class="hover:text-blue-600">How to Convert PDF to Word Without Losing Formatting</a>
+                    </h4>
+                    <p class="text-gray-600 text-sm">Learn professional techniques to maintain formatting during PDF to Word conversion.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-2">
+                        <a href="secure-pdf-conversion-guide.html" class="hover:text-blue-600">Secure PDF Conversion: Protecting Your Privacy Online</a>
+                    </h4>
+                    <p class="text-gray-600 text-sm">Discover how to safely convert PDF files without compromising your privacy and security.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-file-pdf mr-2"></i>
+                        ConvertMyPDF.org
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Your trusted online PDF converter. Fast, secure, and completely free.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Popular Conversions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">PDF to Word</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">PDF to Excel</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">PDF to Image</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    &copy; 2024 ConvertMyPDF.org. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
