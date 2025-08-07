@@ -4,32 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConvertMyPDF.org - Free Online PDF Converter</title>
-    <meta name="description" content="Convert your PDF files online for free. Fast, secure, and easy-to-use PDF conversion tool. No registration required.">
-    <meta name="keywords" content="PDF converter, convert PDF, PDF to Word, PDF to Excel, online PDF converter, free PDF tools">
+    <meta name="description" content="Convert your PDF files to Word, Excel, JPG, PNG, and more for free. Fast, secure, and easy-to-use online PDF conversion tools.">
+    <meta name="keywords" content="PDF converter, convert PDF, PDF to Word, PDF to Excel, PDF to JPG, free PDF converter, online PDF tools">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ads.css">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org markup for website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ConvertMyPDF.org",
+        "url": "https://www.convertmypdf.org",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.convertmypdf.org/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow-sm border-b">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-blue-600">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">
                         <i class="fas fa-file-pdf mr-2"></i>
                         ConvertMyPDF.org
-                    </h1>
+                    </a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="blog.html" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Blog</a>
                         <a href="#about" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                     </div>
@@ -42,7 +58,6 @@
                 </div>
             </div>
         </nav>
-        
         <!-- Mobile menu -->
         <div class="md:hidden hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
@@ -54,159 +69,322 @@
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <main class="container mx-auto">
         <!-- Hero Section -->
-        <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">
-                Free Online PDF Converter
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Convert your PDF files quickly and securely. No registration required, completely free, and works on any device.
-            </p>
-        </div>
-
-        <!-- PDF Conversion Tool -->
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-lg shadow-lg p-8">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Upload Your PDF File</h3>
-                    <p class="text-gray-600">Drag and drop your PDF file or click to browse</p>
+        <section class="py-14">
+            <div class="mx-auto px-4 text-center">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                        Free Online PDF Converter
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Convert your PDF files quickly and securely. No registration required, completely free, and works on any device.
+                    </p>
                 </div>
-
-                <!-- File Upload Area -->
-                <div class="border-2 border-dashed border-gray-300 rounded-lg p-12 text-center hover:border-blue-400 transition-colors cursor-pointer" id="dropZone">
-                    <div class="space-y-4">
-                        <div class="mx-auto w-16 h-16 text-gray-400">
-                            <i class="fas fa-cloud-upload-alt text-4xl"></i>
-                        </div>
-                        <div>
-                            <p class="text-lg text-gray-600 mb-2">
-                                <span class="font-medium text-blue-600 hover:text-blue-500 cursor-pointer">Click to upload</span>
-                                or drag and drop
-                            </p>
-                            <p class="text-sm text-gray-500">PDF files up to 10MB</p>
-                        </div>
+                <!-- PDF Upload Tool (Placeholder) -->
+                <div class="grid grid-cols-12 gap-8">
+                    <div class="col-span-2 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-dashed border-gray-300 rounded-md flex items-center justify-center text-gray-400 font-medium text-sm transition-all duration-300 ease-in-out ">
+                        Ads
                     </div>
-                    <input type="file" id="fileInput" class="hidden" accept=".pdf" />
-                </div>
-
-                <!-- File Info Display -->
-                <div id="fileInfo" class="hidden mt-6 p-4 bg-blue-50 rounded-lg">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
-                            <div>
-                                <p class="font-medium text-gray-900" id="fileName"></p>
-                                <p class="text-sm text-gray-500" id="fileSize"></p>
+                    <div class="col-span-8 bg-white p-8 rounded-lg shadow-xl">
+                        <div id="dropZone" class="border-2 border-dashed border-gray-300 rounded-lg p-10 text-center cursor-pointer hover:border-blue-500 transition-colors">
+                            <i class="fas fa-cloud-upload-alt text-blue-500 text-5xl mb-4"></i>
+                            <p class="text-gray-700 text-lg font-semibold mb-2">Drag & Drop PDF Here or Click to Upload</p>
+                            <p class="text-gray-500 text-sm">Max file size: 25MB</p>
+                            <input type="file" id="fileInput" class="hidden" accept=".pdf" />
+                        </div>
+                        <!-- File Info Display -->
+                        <div id="fileInfo" class="hidden mt-6 p-4 bg-blue-50 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-pdf text-red-500 text-2xl mr-3"></i>
+                                    <div>
+                                        <p class="font-medium text-gray-900" id="fileName"></p>
+                                        <p class="text-sm text-gray-500" id="fileSize"></p>
+                                    </div>
+                                </div>
+                                <button id="removeFile" class="text-gray-400 hover:text-gray-600">
+                                    <i class="fas fa-times"></i>
+                                </button>
                             </div>
                         </div>
-                        <button id="removeFile" class="text-gray-400 hover:text-gray-600">
-                            <i class="fas fa-times"></i>
-                        </button>
+
+                        <!-- Conversion Options -->
+                        <div id="conversionOptions" class="hidden mt-8">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Choose Conversion Format</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-all" data-format="word">
+                                    <i class="fas fa-file-word text-blue-600 text-2xl mb-2"></i>
+                                    <p class="font-medium">Word</p>
+                                </button>
+                                <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-green-400 hover:bg-green-50 transition-all" data-format="excel">
+                                    <i class="fas fa-file-excel text-green-600 text-2xl mb-2"></i>
+                                    <p class="font-medium">Excel</p>
+                                </button>
+                                <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-orange-400 hover:bg-orange-50 transition-all" data-format="powerpoint">
+                                    <i class="fas fa-file-powerpoint text-orange-600 text-2xl mb-2"></i>
+                                    <p class="font-medium">PowerPoint</p>
+                                </button>
+                                <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-purple-400 hover:bg-purple-50 transition-all" data-format="image">
+                                    <i class="fas fa-image text-purple-600 text-2xl mb-2"></i>
+                                    <p class="font-medium">Image</p>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Convert Button -->
+                        <div id="convertSection" class="mt-8 text-center">
+                            <button id="convertBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                                <i class="fas fa-sync-alt mr-2"></i>
+                                Convert PDF
+                            </button>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div id="progressSection" class="hidden mt-8">
+                            <div class="bg-gray-200 rounded-full h-2">
+                                <div id="progressBar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <p id="progressText" class="text-center text-gray-600 mt-2">Converting your file...</p>
+                        </div>
+
+                        <!-- Download Section -->
+                        <div id="downloadSection" class="hidden mt-8 text-center">
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                                <i class="fas fa-check-circle text-green-500 text-3xl mb-3"></i>
+                                <h4 class="text-lg font-semibold text-green-800 mb-2">Conversion Complete!</h4>
+                                <p class="text-green-700 mb-4">Your file has been successfully converted.</p>
+                                <button id="downloadBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                                    <i class="fas fa-download mr-2"></i>
+                                    Download File
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Conversion Options -->
-                <div id="conversionOptions" class="hidden mt-8">
-                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Choose Conversion Format</h4>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-all" data-format="word">
-                            <i class="fas fa-file-word text-blue-600 text-2xl mb-2"></i>
-                            <p class="font-medium">Word</p>
-                        </button>
-                        <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-green-400 hover:bg-green-50 transition-all" data-format="excel">
-                            <i class="fas fa-file-excel text-green-600 text-2xl mb-2"></i>
-                            <p class="font-medium">Excel</p>
-                        </button>
-                        <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-orange-400 hover:bg-orange-50 transition-all" data-format="powerpoint">
-                            <i class="fas fa-file-powerpoint text-orange-600 text-2xl mb-2"></i>
-                            <p class="font-medium">PowerPoint</p>
-                        </button>
-                        <button class="conversion-option p-4 border-2 border-gray-200 rounded-lg hover:border-purple-400 hover:bg-purple-50 transition-all" data-format="image">
-                            <i class="fas fa-image text-purple-600 text-2xl mb-2"></i>
-                            <p class="font-medium">Image</p>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Convert Button -->
-                <div id="convertSection" class="hidden mt-8 text-center">
-                    <button id="convertBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-                        <i class="fas fa-sync-alt mr-2"></i>
-                        Convert PDF
-                    </button>
-                </div>
-
-                <!-- Progress Bar -->
-                <div id="progressSection" class="hidden mt-8">
-                    <div class="bg-gray-200 rounded-full h-2">
-                        <div id="progressBar" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
-                    </div>
-                    <p id="progressText" class="text-center text-gray-600 mt-2">Converting your file...</p>
-                </div>
-
-                <!-- Download Section -->
-                <div id="downloadSection" class="hidden mt-8 text-center">
-                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
-                        <i class="fas fa-check-circle text-green-500 text-3xl mb-3"></i>
-                        <h4 class="text-lg font-semibold text-green-800 mb-2">Conversion Complete!</h4>
-                        <p class="text-green-700 mb-4">Your file has been successfully converted.</p>
-                        <button id="downloadBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                            <i class="fas fa-download mr-2"></i>
-                            Download File
-                        </button>
+                    <div class="col-span-2 bg-gradient-to-br from-gray-100 to-gray-200 border-2 border-dashed border-gray-300 rounded-md flex items-center justify-center text-gray-400 font-medium text-sm transition-all duration-300 ease-in-out ">
+                        Ads
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Features Section -->
-        <div class="mt-16">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold text-gray-900 mb-4">Why Choose ConvertMyPDF.org?</h3>
-                <p class="text-lg text-gray-600">Fast, secure, and reliable PDF conversion</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+        <section class="py-16 bg-white">
+            <div class="px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10">Why Choose ConvertMyPDF.org?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                        <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Secure & Private</h3>
+                        <p class="text-gray-600">Your files are safe with us. We use advanced encryption and delete files after conversion.</p>
                     </div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h4>
-                    <p class="text-gray-600">Convert your PDF files in seconds with our optimized conversion engine.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                        <i class="fas fa-bolt text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Fast & Efficient</h3>
+                        <p class="text-gray-600">Convert your documents in seconds, not minutes. Get your results quickly.</p>
                     </div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">100% Secure</h4>
-                    <p class="text-gray-600">Your files are processed securely and deleted automatically after conversion.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-mobile-alt text-purple-600 text-2xl"></i>
+                    <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                        <i class="fas fa-cogs text-blue-600 text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy to Use</h3>
+                        <p class="text-gray-600">Simple drag-and-drop interface. No software installation or registration required.</p>
                     </div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Works Everywhere</h4>
-                    <p class="text-gray-600">Use on any device - desktop, tablet, or mobile. No software installation required.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Blog CTA Section -->
-        <div class="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-center text-white">
-            <h3 class="text-2xl font-bold mb-4">Learn More About PDF Management</h3>
-            <p class="text-lg mb-6">Discover tips, tricks, and best practices for working with PDF files.</p>
-            <a href="blog.html" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors">
-                Explore Our Blog
-            </a>
-        </div>
+        <!-- Ad Placement Section 1 - Header Banner -->
+        <section class="ad-section">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="ad-container">
+                    <div class="ad-label">Advertisement</div>
+                    <div class="ad-placeholder ad-leaderboard">
+                        728x90 Leaderboard Ad
+                    </div>
+                    <div class="ad-disclosure">Your ad could be here - Contact us for advertising opportunities</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Articles Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Recent Articles & Guides</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Article 1: PDF to Word Conversion -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-2 rounded-lg">
+                                    <i class="fas fa-file-word text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 1, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                How to Convert PDF to Word Without Losing Formatting
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                A comprehensive guide to converting your PDF documents into editable Word files while preserving original formatting.
+                            </p>
+                            <a href="./blog/pdf-to-word-conversion-guide.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Article 2: Secure PDF Conversion -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-lg">
+                                    <i class="fas fa-lock text-green-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 5, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Secure PDF Conversion: Protecting Your Privacy Online
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Learn essential tips and best practices to ensure your PDF conversions are secure and your data remains private.
+                            </p>
+                            <a href="./blog/secure-pdf-conversion-guide.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Article 3: Creating Accessible PDFs -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-2 rounded-lg">
+                                    <i class="fas fa-universal-access text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 10, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Creating Accessible PDFs: Standards and Best Practices
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Discover how to create PDF documents that are accessible to everyone, including users with disabilities.
+                            </p>
+                            <a href="./blog/accessible-pdf-conversion.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Article 4: PDF Annotation -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-pink-100 p-2 rounded-lg">
+                                    <i class="fas fa-highlighter text-pink-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 15, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                PDF Annotation: Tools and Techniques for Effective Collaboration
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Discover the best PDF annotation tools and techniques to mark up, highlight, and comment on documents for improved collaboration.
+                            </p>
+                            <a href="./blog/pdf-annotation-tools-techniques.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Article 5: Creating Fillable PDF Forms -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-orange-100 p-2 rounded-lg">
+                                    <i class="fas fa-file-alt text-orange-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 20, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Creating Fillable PDF Forms: A Step-by-Step Guide
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Learn how to create interactive, fillable PDF forms from scratch or existing documents. This guide covers best practices and essential tools.
+                            </p>
+                            <a href="./blog/pdf-form-creation-guide.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Article 6: PDF to HTML Conversion -->
+                    <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-teal-100 p-2 rounded-lg">
+                                    <i class="fas fa-code text-teal-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-gray-500">March 25, 2024</p>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                PDF to HTML Conversion: Making Your Documents Web-Friendly
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Learn how to convert PDF files into HTML, making your documents accessible and viewable directly in web browsers.
+                            </p>
+                            <a href="./blog/pdf-to-html-conversion-guide.html" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="blog.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-colors text-lg">
+                        View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Placement Section 2 - Sidebar Style -->
+        <section class="ad-section">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Main content area -->
+                    <div class="md:col-span-2">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Why Choose Our PDF Tools?</h3>
+                            <p class="text-gray-600 mb-4">
+                                Our platform offers the most comprehensive set of PDF conversion tools available online. 
+                                Whether you need to convert PDFs to Word, Excel, PowerPoint, or images, we've got you covered.
+                            </p>
+                            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                <li>100% Free to use - No hidden fees or subscriptions</li>
+                                <li>Secure processing - Files are automatically deleted after conversion</li>
+                                <li>High-quality output - Maintains formatting and layout</li>
+                                <li>Fast conversion - Get your results in seconds</li>
+                                <li>No software installation required</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar with ad -->
+                    <div class="md:col-span-1">
+                        <div class="ad-container sidebar-ad">
+                            <div class="ad-label">Advertisement</div>
+                            <div class="ad-placeholder ad-rectangle">
+                                300x250 Rectangle Ad
+                            </div>
+                            <div class="ad-disclosure">Sponsored content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white mt-16">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="col-span-2">
                     <h3 class="text-xl font-bold mb-4">
@@ -221,7 +399,7 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
                         <li><a href="blog.html" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
                         <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
                     </ul>
@@ -246,7 +424,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
 

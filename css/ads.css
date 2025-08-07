@@ -1,0 +1,125 @@
+/* Ad Placement Styles */
+.ad-container {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ad-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.ad-placeholder {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border: 2px dashed #d1d5db;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.ad-placeholder:hover {
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+    border-color: #9ca3af;
+}
+
+/* Specific ad sizes */
+.ad-leaderboard {
+    height: 90px;
+    max-width: 728px;
+    margin: 0 auto;
+}
+
+.ad-square {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.ad-rectangle {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.ad-banner {
+    height: 60px;
+    max-width: 468px;
+    margin: 0 auto;
+}
+
+.ad-skyscraper {
+    width: 160px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive ad containers */
+@media (max-width: 768px) {
+    .ad-leaderboard {
+        max-width: 320px;
+        height: 50px;
+    }
+    
+    .ad-square {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ad-rectangle {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+/* Ad section styling */
+.ad-section {
+    background: #f9fafb;
+    padding: 2rem 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ad-section-inline {
+    margin: 3rem 0;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Sidebar ad styling */
+.sidebar-ad {
+    position: sticky;
+    top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Article inline ad */
+.article-inline-ad {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Ad disclosure */
+.ad-disclosure {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+

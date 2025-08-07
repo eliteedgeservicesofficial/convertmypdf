@@ -1,33 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://convertmypdf.org/</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://www.convertmypdf.org/index.html</loc>
+        <lastmod>2024-05-25</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://convertmypdf.org/blog.html</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <loc>https://www.convertmypdf.org/blog.html</loc>
+        <lastmod>2024-05-25</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://convertmypdf.org/blog/pdf-to-word-conversion-guide.html</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-word-conversion-guide.html</loc>
+        <lastmod>2024-03-01</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://convertmypdf.org/blog/secure-pdf-conversion-guide.html</loc>
-        <lastmod>2024-01-12</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://www.convertmypdf.org/blog/secure-pdf-conversion-guide.html</loc>
+        <lastmod>2024-03-05</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://convertmypdf.org/blog/accessible-pdf-conversion.html</loc>
-        <lastmod>2024-01-10</lastmod>
-        <changefreq>monthly</changefreq>
+        <loc>https://www.convertmypdf.org/blog/accessible-pdf-conversion.html</loc>
+        <lastmod>2024-03-10</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-annotation-tools-techniques.html</loc>
+        <lastmod>2024-03-15</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-form-creation-guide.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-html-conversion-guide.html</loc>
+        <lastmod>2024-03-25</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-text-conversion-guide.html</loc>
+        <lastmod>2024-03-30</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-security-best-practices.html</loc>
+        <lastmod>2024-04-05</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-optimization-for-web.html</loc>
+        <lastmod>2024-04-10</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-redaction-guide.html</loc>
+        <lastmod>2024-04-15</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-excel-conversion-guide.html</loc>
+        <lastmod>2024-04-20</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/ocr-pdf-conversion-best-practices.html</loc>
+        <lastmod>2024-04-25</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-image-conversion-guide.html</loc>
+        <lastmod>2024-04-30</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-editing-tips.html</loc>
+        <lastmod>2024-05-05</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-to-powerpoint-conversion-guide.html</loc>
+        <lastmod>2024-05-10</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-watermarking-guide.html</loc>
+        <lastmod>2024-05-15</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-digital-signatures-guide.html</loc>
+        <lastmod>2024-05-20</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.convertmypdf.org/blog/pdf-merging-splitting-guide.html</loc>
+        <lastmod>2024-05-25</lastmod>
         <priority>0.7</priority>
     </url>
 </urlset>
